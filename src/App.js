@@ -1,13 +1,9 @@
 // import { motion } from "framer-motion"
 import Button from "@material-tailwind/react/Button";
+import {Navbar} from "./Navbar";
 function App() {
   return (
-    <div
-      className='text-3xl'
-    >
-      hfdy
-      <Button color='blue' ripple="light">Button</Button>
-    </div> 
+      <Navbar/>
   );
 }
 
