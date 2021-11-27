@@ -15,6 +15,8 @@ and straight from the login user can access the control panel.
 
 Compare our better UI Prototype of Hestia here https://optimize.raghavyuva.com and oridinal Hestia CP Demo here https://demo.hestiacp.com:8083/login/
 
+Used Tailwind CSS , Reactjs , Threejs , ParticleJS , ChartJS to create the Project
+
 ## Optimizations
 
 Optimizations Comparing Hestia? 
