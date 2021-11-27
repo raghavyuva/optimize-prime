@@ -38,7 +38,7 @@ export let Navbar = ({sToggle,Togglest}) => {
                         <a href="" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-lg">
                             Support
                         </a>
-                        <a href="#donate" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white text-lg">
+                        <a href="#donate" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-lg">
                             Donate
                         </a>
                     </div>
