@@ -6,6 +6,7 @@ import { Navbar } from './Navbar'
 import PromotionalBanner from './PromotionalBanner'
 import { ReactComponent as Logo } from "./logo.svg";
 import WelcomeBanner from './WelcomeBanner'
+import { Link } from 'react-router-dom'
 function Structure({
     Toggle,
     setToggle,
@@ -56,14 +57,14 @@ function Structure({
                     <div className='justify-between flex flex-col '>
                         <div>
                             <div className="flex flex-row justify-between">
-                                <Logo className="h-24 w-24 m-8 animate-pulse"/>
+                                <Logo className="h-24 w-24 m-8 animate-pulse" />
                                 <button className="m-2 lg:hidden " onClick={() => {
                                     setToggle(!Toggle)
                                 }}>
                                     <svg className=" h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                              d="M6 18L18 6M6 6l12 12"/>
+                                            d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                 </button>
                             </div>
@@ -73,10 +74,13 @@ function Structure({
                                     return (
                                         <div className='border-solid'>
                                             <div className='p-2 my-6 mt-12 flex  flex-row cursor-pointer mx-4   rounded-md '>
-                                                <content.Icon className='text-white' size={25} />
-                                                <span className='ml-4  capitalize'>
-                                                    {content.label}
-                                                </span>
+                                                <Link to={content.to} className='flex flex-row' >
+                                                    <content.Icon className='text-white' size={25} />
+
+                                                    <span className='ml-4  capitalize'>
+                                                        {content.label}
+                                                    </span>
+                                                </Link>
                                             </div>
 
                                         </div>

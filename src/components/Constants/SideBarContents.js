@@ -4,7 +4,7 @@ export const SideBarContents = [
     {
         label: "users",
         Icon: HiUserCircle,
-        to: "/users",
+        to: "/dashboard",
         sub: {
             label: "users",
             menu: [
@@ -22,7 +22,7 @@ export const SideBarContents = [
     {
         label: "Stats",
         Icon: HiTrendingUp,
-        to: "/stats",
+        to: "/widgets",
         sub: {
             label: "DOMAINS",
             menu: [
@@ -40,7 +40,7 @@ export const SideBarContents = [
     {
         label: "WEB",
         Icon: HiGlobeAlt,
-        to: "/domains",
+        to: "/dashboard",
         sub: {
             label: "DOMAINS",
 
@@ -58,7 +58,7 @@ export const SideBarContents = [
     }, {
         label: "Mail",
         Icon: HiMail,
-        to: "/mail",
+        to: "/dashboard",
         sub: {
             label: "Mail",
             menu: [
@@ -75,7 +75,7 @@ export const SideBarContents = [
     }, {
         label: "DB",
         Icon: HiDatabase,
-        to: "/database",
+        to: "/dashboard",
 
         sub: {
             label: "DB",
@@ -89,7 +89,7 @@ export const SideBarContents = [
     }, {
         label: "Cron",
         Icon: HiOutlineClock,
-        to: "/cron",
+        to: "/dashboard",
 
         sub: {
             label: "Cron",
@@ -107,7 +107,7 @@ export const SideBarContents = [
     },
     {
         label: "Backups",
-        to: "/backups",
+        to: "/dashboard",
         Icon: AiOutlineFileZip,
         sub: {
             label: "Backups",

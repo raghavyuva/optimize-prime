@@ -9,6 +9,8 @@ import Pricing from './Pricing';
 import Team from '../Team';
 import Blog from '../Blog';
 import Content from '../Content';
+import { Link } from 'react-router-dom';
+
 function Home({
     loggedin,
     setloggedin

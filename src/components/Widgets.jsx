@@ -50,10 +50,10 @@ const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
 export  let WidgetGridBox = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row">
 
             <div>
-                <Scatter className="h-5 w-5" options={{
+                <Scatter className="h-5 w-screen" options={{
                     scales: {
                     y: {
                     beginAtZero: true,

@@ -8,6 +8,7 @@ import Home from './components/Landing/Home';
 import Chart from './components/Chart';
 import Chart02 from './components/Chart02';
 import StatsSection from './components/StatsSection';
+import Widget from './Widget';
 
 
 function MainScreen() {
@@ -43,22 +44,15 @@ function MainScreen() {
   ]
   return (<div >
     {
-      loggedin ? (
-        <DefCodePath
-          Components={Cards}
-          Toggle={Toggle}
-          setToggle={setToggle}
-          bannerOpen={bannerOpen}
-          setbannerOpen={setbannerOpen}
-          sidebarContents={SideBarContents}
-          grid_system={true}
-        />
-      ) : (
-        <Home
-          loggedin={loggedin}
-          setloggedin={setloggedin}
-        />
-      )
+      <DefCodePath
+        Components={Cards}
+        Toggle={Toggle}
+        setToggle={setToggle}
+        bannerOpen={bannerOpen}
+        setbannerOpen={setbannerOpen}
+        sidebarContents={SideBarContents}
+        grid_system={true}
+      />
     }
   </div>)
 }
@@ -66,14 +60,14 @@ function MainScreen() {
 const App = () => {
   return (
 
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/dashboard" element={<MainScreen/>} />
-          <Route exact path="/login" element={<LoginScreen/>}/>
-          <Route exact path="/widgets" element={<WidgetGridBox/>}/>
-          <Route exact path='/' element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/dashboard" element={<MainScreen />} />
+        <Route exact path="/login" element={<LoginScreen />} />
+        <Route exact path="/widgets" element={<Widget />} />
+        <Route exact path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 };
 
