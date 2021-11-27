@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
+import {  Link } from "react-router-dom";
 
 
 export let LoginScreen = () => {
@@ -17,7 +18,10 @@ export let LoginScreen = () => {
                     <form>
                         <div>
                             <div class="text-sm font-bold text-gray-700 tracking-wide">Email Address</div>
-                            <input class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="mike@gmail.com"></input>
+                            <input 
+                            type='email'
+                            value='hey@yourdomain.com'
+                            class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="mike@gmail.com"></input>
                         </div>
                         <div class="mt-8">
                             <div class="flex justify-between items-center">
@@ -31,18 +35,22 @@ export let LoginScreen = () => {
                                     </a>
                                 </div>
                             </div>
-                            <input class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="" placeholder="Enter your password"></input>
+                            <input
+                            type='password'
+                             class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" 
+                             value='djfhdjfhsdf'
+                              placeholder="Enter your password"></input>
                         </div>
                         <div class="mt-10">
-                            <button class="bg-indigo-500 text-gray-100 p-4 w-full rounded-full tracking-wide
+                            <Link to='/dashboard' class="bg-indigo-500 text-gray-100 p-4 w-full rounded-full tracking-wide
                                 font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-indigo-600
                                 shadow-lg">
                                 Log In
-                            </button>
+                            </Link>
                         </div>
                     </form>
                     <div class="mt-12 text-sm font-display font-semibold text-gray-700 text-center">
-                        Don't have an account ? <a class="cursor-pointer text-indigo-600 hover:text-indigo-800">Sign up</a>
+                        Don't have an account  ?  <a href='mailto:hey@sdf.com' class="cursor-pointer text-indigo-600 hover:text-indigo-800">Ask the administrator</a>
                     </div>
                 </div>
             </div>

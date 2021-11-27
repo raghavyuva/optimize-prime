@@ -8,10 +8,12 @@ import Chart from './components/Chart';
 import Chart02 from './components/Chart02';
 import StatsSection from './components/StatsSection';
 import {WidgetGridBox} from "./components/Widgets";
+import Home from './components/Landing/Home';
 
 function MainScreen() {
   const [Toggle, setToggle] = useState(false);
   const [bannerOpen, setbannerOpen] = useState(true);
+  const [loggedin, setloggedin] = useState(false)
   const Cards = [
    
     {
@@ -40,6 +42,8 @@ function MainScreen() {
     },
   ]
   return (<div >
+
+    
   <DefCodePath
       Components={Cards}
       Toggle={Toggle}
@@ -49,6 +53,7 @@ function MainScreen() {
       sidebarContents={SideBarContents}
       grid_system={true}
     />
+
   </div>)
 }
 
@@ -57,9 +62,10 @@ const App = () => {
 
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<MainScreen/>} />
+          <Route exact path="/dashboard" element={<MainScreen/>} />
           <Route exact path="/login" element={<LoginScreen/>}/>
           <Route exact path="/widgets" element={<WidgetGridBox/>}/>
+          <Route exact path='/' element={<Home />} />
         </Routes>
       </BrowserRouter>
   )

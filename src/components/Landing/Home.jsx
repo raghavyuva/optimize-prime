@@ -9,7 +9,11 @@ import Pricing from './Pricing';
 import Team from '../Team';
 import Blog from '../Blog';
 import Content from '../Content';
-function Home() {
+import {  Link } from "react-router-dom";
+function Home({
+    loggedin,
+    setloggedin
+}) {
 
     // const handleType = (count) => {
     //     // access word count number
@@ -30,7 +34,7 @@ function Home() {
                             Domain,Dns ,Cipher
                         </span> */}
                         <Typewriter
-                            words={['Eat', 'Sleep', 'Code', 'Repeat!']}
+                            words={['Dns', 'Domain', 'Control', 'Cipher!']}
                             loop={5}
                             cursor
                             cursorStyle='_'
@@ -47,8 +51,10 @@ function Home() {
                         </span>
                         <btn
                             className='btn btn-primary  w-48 self-center my-2  bg-gradient-to-r from-blue-500 via-blue-700 to-indigo-700'
+                        onClick={()=>{}}
                         >
-                            Get Started
+                                <Link to="/login">Get Started</Link>
+                            
                         </btn>
                     </div>
                     <div>

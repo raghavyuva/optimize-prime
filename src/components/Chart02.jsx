@@ -4,7 +4,7 @@ function Chart02() {
     return (
         <div>
             <div class="flex flex-col items-center w-full mx-2 p-6 pb-6  bg-white rounded-lg shadow-xl sm:p-8">
-                <h2 class="text-xl font-bold">Monthly Revenue</h2>
+                <h2 class="text-xl font-bold">Dns Requests served</h2>
                 <span class="text-sm font-semibold text-gray-500">2020</span>
                 <div class="flex items-end flex-grow w-full  space-x-2 sm:space-x-3">
                     <div class="relative flex flex-col items-center flex-grow pb-5 group">

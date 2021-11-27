@@ -4,7 +4,7 @@ function Chart() {
     return (
         <div>
             <div class="flex flex-col items-center w-full max-w-screen-md p-6 pb-6 bg-white rounded-lg shadow-xl sm:p-8 my-2">
-                <h2 class="text-xl font-bold">Monthly Revenue</h2>
+                <h2 class="text-xl font-bold">Ram Usage</h2>
                 <span class="text-sm font-semibold text-gray-500">2020</span>
                 <div class="flex items-end flex-grow w-full mt-2 space-x-2 sm:space-x-3">
                     <div class="relative flex flex-col items-center flex-grow pb-5 group">
