@@ -17,13 +17,15 @@ function Structure({
             <input id="my-drawer-2 "
                 type="checkbox"
                 className="drawer-toggle"
-                // onClick={() => { settoggle(!toggle) }}
-                // checked={toggle}
+                onClick={() => { setToggle(!Toggle) }}
+                checked={Toggle}
                 readOnly
             />
             <div className="flex flex-col  drawer-content overflow-hidden p-0  ">
                 <div className=''>
                     <Navbar
+                        sToggle={setToggle}
+                        Togglest={Toggle}
 
                     />
                 </div>
@@ -52,7 +54,15 @@ function Structure({
 
                     <div className='justify-between flex flex-col '>
                         <div>
-                            <Logo className="h-24 w-24 m-8 animate-pulse"/>
+                            <div className="flex flex-row justify-between">
+                                <Logo className="h-24 w-24 m-8 animate-pulse"/>
+                                <button className="m-2 lg:hidden " onClick={() => { setToggle(!Toggle) }}>
+                                    <svg class=" h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+
 
                             {
                                 sidebarContents && sidebarContents.map((content) => {

@@ -3,7 +3,7 @@ import "./patterns.css";
 import { ReactComponent as Logo } from "./logo.svg";
 import React from "react";
 
-export let Navbar = () => {
+export let Navbar = ({sToggle,Togglest}) => {
 
     const [nbo,setnbo] = useState(true)
 
@@ -11,7 +11,7 @@ export let Navbar = () => {
         <div className="min-h-full" >
             <nav className="flex items-center justify-center flex-wrap bg-gradient-to-tr from-green-900 via-purple-800 to-green-700  p-2">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <Logo className="h-12 w-12 mr-5 animate-pulse md:hidden"></Logo>
+                    <Logo className="h-12 w-12 mr-5 animate-pulse md:hidden" onClick={() => sToggle(!Togglest)}></Logo>
                     <span className="font-bold text-2xl tracking-tight ">Cipher Control Panel</span>
                 </div>
                 <div className="block lg:hidden">

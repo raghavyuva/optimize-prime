@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {SideBarContents} from "./components/Constants/SideBarContents";
 import ListOfUsers from "./components/ListOfUsers";
 import DefCodePath from "./components/DefCodePath";
+import {LoginScreen} from "./components/LoginScreen";
 
 
 function MainScreen() {
@@ -34,6 +35,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<MainScreen/>} />
+          <Route exact path="/login" element={<LoginScreen/>}/>
         </Routes>
       </BrowserRouter>
   )
