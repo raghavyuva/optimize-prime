@@ -10,7 +10,8 @@ function Structure({
     Toggle,
     setToggle,
     sidebarContents,
-    Components
+    Components,
+    grid_system
 }) {
     return (
         <div className=" shadow bg-primary-background drawer drawer-mobile h-full" >
@@ -33,15 +34,15 @@ function Structure({
                     <WelcomeBanner
 
                     />
-                   
+                    <FeaturedStats />
 
-                    <div className={` 'grid-cols-2 lg:grid   flex flex-col '} overflow-hidden `}
+                    <div className={`${grid_system ? 'grid-cols-2 lg:grid p-4  flex flex-col ' : "flex flex-col"} overflow-hidden m-2  `}
 
                     >
                         {
                             Components?.length > 0 &&
                             Components?.map((Components) => (
-                                <Components.Component  />
+                                <Components.Component />
                             ))
                         }
                     </div>
@@ -54,15 +55,7 @@ function Structure({
 
                     <div className='justify-between flex flex-col '>
                         <div>
-                            <div className="flex flex-row justify-between">
-                                <Logo className="h-24 w-24 m-8 animate-pulse"/>
-                                <button className="m-2 lg:hidden " onClick={() => { setToggle(!Toggle) }}>
-                                    <svg class=" h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-
+                            <Logo className="h-24 w-24 m-8 animate-pulse" />
 
                             {
                                 sidebarContents && sidebarContents.map((content) => {

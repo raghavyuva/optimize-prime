@@ -9,7 +9,8 @@ function DefCodePath({
     Toggle,
     setToggle,
     sidebarContents,
-    Components
+    Components,
+    grid_system
 }) {
     return (
         <div>
@@ -23,6 +24,7 @@ function DefCodePath({
                 setToggle={setToggle}
                 sidebarContents={sidebarContents}
                 Components={Components}
+                grid_system={grid_system}
             />
         </div>
     )
