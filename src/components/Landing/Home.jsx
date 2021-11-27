@@ -9,42 +9,28 @@ import Pricing from './Pricing';
 import Team from '../Team';
 import Blog from '../Blog';
 import Content from '../Content';
-import {  Link } from "react-router-dom";
 function Home({
     loggedin,
     setloggedin
 }) {
 
-    // const handleType = (count) => {
-    //     // access word count number
-    //     console.log(count)}
-    //   }
-
-    //   const handleDone = () => {
-    //     console.log(`Done after 5 loops!`)
-    //   }
 
     return (
         <div className=''>
             <Navbar />
             <div class="flex  flex-row justify-center items-center bg-gray-900">
                 <div class="text-center sm:flex items-center mt-10   ">
-                    <div className='flex flex-col text-gray-50 text-2xl'>
-                        {/* <span className='text-5xl font-extrabold text-gray-50'>
-                            Domain,Dns ,Cipher
-                        </span> */}
+                    <div className='flex flex-col text-gray-50 text-4xl'>
+
                         <Typewriter
-                            words={['Dns', 'Domain', 'Control', 'Cipher!']}
+                            words={['Domain', 'Dns', 'Cipher', 'Repeat!']}
                             loop={5}
-                            cursor
-                            cursorStyle='_'
+                            
                             typeSpeed={70}
                             deleteSpeed={50}
                             delaySpeed={1000}
-                        // onLoopDone={handleDone}
-                        // onType={handleType}
                         />
-                        <span className='font-sans text-gray-100 my-2'>
+                        <span className='font-sans text-xl text-gray-100 my-2'>
                             Our Control Panel works on all Ways,
                             <br />
                             so you only have to set it up once, and get beautiful results forever.
@@ -58,7 +44,7 @@ function Home({
                         </btn>
                     </div>
                     <div>
-                        <img src={Globe} alt="" className=' w-80 h-80 ' />
+                        <img src={Globe} alt=""  />
                     </div>
                 </div>
             </div>

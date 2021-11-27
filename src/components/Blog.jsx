@@ -64,7 +64,7 @@ function Blog() {
                     <div class="flex">
                         <div class="pt-1 mr-6 text-center">
                             <div class="px-2 pb-1 mb-1 border-b border-gray-400">
-                                <p class="text-sm text-blue-gray-700">Feb</p>
+                                <p class="text-sm text-gray-100">Feb</p>
                             </div>
                             <div class="px-2"><p class="text-lg font-bold">27</p></div>
                         </div>

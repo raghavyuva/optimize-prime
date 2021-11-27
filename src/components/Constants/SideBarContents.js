@@ -1,9 +1,10 @@
-import { HiDatabase, HiGlobeAlt, HiMail, HiOutlineClock, HiUserCircle } from "react-icons/hi";
+import { HiDatabase, HiGlobeAlt, HiMail, HiOutlineClock, HiTrendingUp, HiUserCircle } from "react-icons/hi";
 import { AiOutlineFileZip } from 'react-icons/ai'
 export const SideBarContents = [
     {
         label: "users",
         Icon: HiUserCircle,
+        to: "/users",
         sub: {
             label: "users",
             menu: [
@@ -19,10 +20,30 @@ export const SideBarContents = [
         }
     },
     {
-        label: "WEB",
-        Icon: HiGlobeAlt,
+        label: "Stats",
+        Icon: HiTrendingUp,
+        to: "/stats",
         sub: {
             label: "DOMAINS",
+            menu: [
+                {
+                    label: "DOMAINS",
+                    badgeCount: 2
+                },
+                {
+                    label: "Aliases",
+                    badgeCount: 0
+                },
+            ]
+        }
+    },
+    {
+        label: "WEB",
+        Icon: HiGlobeAlt,
+        to: "/domains",
+        sub: {
+            label: "DOMAINS",
+
             menu: [
                 {
                     label: "DOMAINS",
@@ -37,6 +58,7 @@ export const SideBarContents = [
     }, {
         label: "Mail",
         Icon: HiMail,
+        to: "/mail",
         sub: {
             label: "Mail",
             menu: [
@@ -53,6 +75,8 @@ export const SideBarContents = [
     }, {
         label: "DB",
         Icon: HiDatabase,
+        to: "/database",
+
         sub: {
             label: "DB",
             menu: [
@@ -65,6 +89,8 @@ export const SideBarContents = [
     }, {
         label: "Cron",
         Icon: HiOutlineClock,
+        to: "/cron",
+
         sub: {
             label: "Cron",
             menu: [
@@ -81,6 +107,7 @@ export const SideBarContents = [
     },
     {
         label: "Backups",
+        to: "/backups",
         Icon: AiOutlineFileZip,
         sub: {
             label: "Backups",
