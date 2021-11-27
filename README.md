@@ -13,6 +13,8 @@ where we guys have taken these problems into consideration and changed a lot of 
 And also our Cipher Control Panel is More Fancier and modern website which also has landing page which connects with the login page.
 and straight from the login user can access the control panel.
 
+Compare our better UI Prototype of Hestia here https://optitmize.raghavyuva.com and oridinal Hestia CP Demo here https://demo.hestiacp.com:8083/login/
+
 ## Optimizations
 
 Optimizations Comparing Hestia? 
@@ -22,6 +24,7 @@ Faster,
 Furnished UI/UX,
 Responsive,
 Highly functional
+
 
 
 ## Screenshots
