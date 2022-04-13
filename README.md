@@ -1,6 +1,12 @@
 
-![Logo](https://raw.githubusercontent.com/raghavyuva/optimize-prime/d382d055eab232d57c5167680740fdc7b543b7f8/logo.svg)
-
+<br/>
+<p align="center">
+  <a href="https://lucamail.raghavyuva.com/">
+<h3 align="center"><img src="https://raw.githubusercontent.com/raghavyuva/optimize-prime/d382d055eab232d57c5167680740fdc7b543b7f8/logo.svg" alt="LucaMail"><br>Cipher Control Panel</i></h3>  </a>
+  <p align="center">
+   A PROJECT THAT WON HACKATHON
+  </p>
+</p>
 
 # Optimize Prime - Cipher Control Panel
 
@@ -31,5 +37,8 @@ Highly functional
 
 ## Screenshots
 
-![App Screenshot](https://storage.cloudconvert.com/tasks/49ab2b82-cca9-433c-9f37-86d8b169fbfd/optimize.raghavyuva.com.png?AWSAccessKeyId=cloudconvert-production&Expires=1638085860&Signature=OlM0RSGS%2FB9XEmJCxu8zq%2Ba7IrY%3D&response-content-disposition=inline%3B%20filename%3D%22optimize.raghavyuva.com.png%22&response-content-type=image%2Fpng)
+<embed src="https://github.com/raghavyuva/optimize-prime/blob/master/public/RAGHAVENDRA%20BHAT%20Optimize%20Prime%20Certificate.pdf" width="500" height="375" 
+ type="application/pdf">
+
+
 
