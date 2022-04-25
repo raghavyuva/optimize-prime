@@ -37,8 +37,4 @@ Highly functional
 
 ## Screenshots
 
-<embed src="https://github.com/raghavyuva/optimize-prime/blob/master/public/RAGHAVENDRA%20BHAT%20Optimize%20Prime%20Certificate.pdf" width="500" height="500" 
- type="application/pdf">
-
-
-
+<img src="https://imgur.com/ry6CZ92.png" />
